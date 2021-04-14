@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DbCvModelStoreContainer" CdmEntityContainer="DbCvEntities">
+    <EntitySetMapping Name="About">
+      <EntityTypeMapping TypeName="DbCvModel.About">
+        <MappingFragment StoreEntitySet="About">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SurName" ColumnName="SurName" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="Gsm" ColumnName="Gsm" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Awards">
+      <EntityTypeMapping TypeName="DbCvModel.Awards">
+        <MappingFragment StoreEntitySet="Awards">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contact">
+      <EntityTypeMapping TypeName="DbCvModel.Contact">
+        <MappingFragment StoreEntitySet="Contact">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NameSurname" ColumnName="NameSurname" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Education">
+      <EntityTypeMapping TypeName="DbCvModel.Education">
+        <MappingFragment StoreEntitySet="Education">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="SubHeader" ColumnName="SubHeader" />
+          <ScalarProperty Name="Subheader2" ColumnName="Subheader2" />
+          <ScalarProperty Name="GPA" ColumnName="GPA" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Experience">
+      <EntityTypeMapping TypeName="DbCvModel.Experience">
+        <MappingFragment StoreEntitySet="Experience">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Heading" ColumnName="Heading" />
+          <ScalarProperty Name="SubHeading" ColumnName="SubHeading" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Interests">
+      <EntityTypeMapping TypeName="DbCvModel.Interests">
+        <MappingFragment StoreEntitySet="Interests">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Description1" ColumnName="Description1" />
+          <ScalarProperty Name="Description2" ColumnName="Description2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Login">
+      <EntityTypeMapping TypeName="DbCvModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MySkils">
+      <EntityTypeMapping TypeName="DbCvModel.MySkils">
+        <MappingFragment StoreEntitySet="MySkils">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Skil" ColumnName="Skil" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
