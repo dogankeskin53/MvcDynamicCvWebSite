@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Web;
 using MvcDynamicCvWebSite.Models.Entity;
 
@@ -22,7 +23,7 @@ namespace MvcDynamicCvWebSite.Repository
 
         public void TDelete(T p)
         {
-            db.Set<T>().Add(p);
+            db.Set<T>().Remove(p);
             db.SaveChanges(); 
         }
 
@@ -32,6 +33,19 @@ namespace MvcDynamicCvWebSite.Repository
 
         public void TUpdate(T p) {
             db.SaveChanges();
+        }
+
+        /// <summary>
+        /// Linq Expression İşlemi
+        /// Where'den gelecek olan şarta göre ilk değer döndürülür.
+        /// Genelde where veya filter parametresi verilir.
+        /// Sadece 1 değer geri döner
+        /// </summary>
+        /// <param name="where"></param>
+        /// <returns></returns>
+        public T Find(Expression<Func<T, bool>> where)
+        { 
+            return db.Set<T>().FirstOrDefault(where);
         }
     }
 }

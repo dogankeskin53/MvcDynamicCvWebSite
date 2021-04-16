@@ -1,0 +1,27 @@
+﻿@model MvcDynamicCvWebSite.Models.Entity.Experience
+@{
+    ViewBag.Title = "GetExperience";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+} 
+
+<h4>Deneyimlerimi Güncelle</h4>
+<br />
+<form method="post">
+    @Html.Label("Exp Id");
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
+    <br />
+    @Html.Label("Başık");
+    @Html.TextBoxFor(x => x.Heading, new { @class = "form-control" })
+    <br />
+    @Html.Label("Alt Başlık");
+    @Html.TextBoxFor(x => x.SubHeading, new { @class = "form-control" })
+    <br />
+    @Html.Label("Tarih");
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+    <br />
+    @Html.Label("Açıklama");
+    @Html.TextAreaFor(x => x.Description, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-info"> Güncelle </button>
+</form>

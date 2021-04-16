@@ -184,3 +184,5 @@ Doganium.DataAccess/dataaccessappsettings.json
 .vs/Doganium/config/applicationhost.config
 MvcDynamicCvWebSite/bin/MvcDynamicCvWebSite.dll.config
 MvcDynamicCvWebSite/bin/MvcDynamicCvWebSite.pdb
+*.config
+.vs/MvcDynamicCvWebSite/v16/.suo

@@ -10,7 +10,7 @@
 <h3>Deneyim Listesi</h3>
 <br />
 
-<table class="table-bordered" >
+<table class="table table-bordered">
     <tr>
         <th>ID</th>
         <th>Başlık</th>
@@ -25,14 +25,18 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td>@item.ID</td> 
-            <td>@item.Heading</td> 
-            <td>@item.SubHeading</td> 
-            <td>@item.Date</td> 
-            <td><a href="#" class="btn btn-danger"> Sil </a></td> 
-            <td><a href="#" class="btn btn-success"> Düzenle</a></td> 
+            <td>@item.ID</td>
+            <td>@item.Heading</td>
+            <td>@item.SubHeading</td>
+            <td>@item.Date</td>
+            <td><a href="/Experience/DeleteExperience/@item.ID" class="btn btn-danger btn-block"> Sil </a></td>
+            <td><a href="/Experience/GetExperience/@item.ID" class="btn btn-warning btn-block"> Düzenle </a></td>
         </tr>
-    } 
-    </table>
+    }
+</table>
 
-<a href="#" class="btn btn-primary"> Yeni Deneyim Ekle</a>
+@*
+    Experience: controllerın adı
+    AddExperiance : controler içindeki methodun adı
+*@
+<a href="/Experience/AddExperiance/" class="btn btn-primary"> Yeni Deneyim Ekle </a>

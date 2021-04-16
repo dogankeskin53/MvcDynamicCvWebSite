@@ -39,7 +39,7 @@
                 </li>
             </ul>
 
-            
+
         </nav>
         <!-- /.navbar -->
         <!-- Main Sidebar Container -->
@@ -61,7 +61,7 @@
                         <img src="/AdminLTE-3/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
+                        <a href="#" class="d-block">Admin Paneli</a>
                     </div>
                 </div>
 
@@ -69,7 +69,7 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
-                        with font-awesome or any other icon font library -->
+                    with font-awesome or any other icon font library -->
                         <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -77,7 +77,7 @@
                                     Hakkımda
                                     <i class="right fas fa-angle-left"></i>
                                 </p>
-                            </a> 
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a href="../widgets.html" class="nav-link">
@@ -89,14 +89,12 @@
                             </a>
                         </li>
                         <li class="nav-item has-treeview">
-                            <a href="#" class="nav-link">
+                            <a href="/Experience/Index" class="nav-link">
                                 <i class="nav-icon fas fa-copy"></i>
                                 <p>
                                     Deneyimlerim
-                                    <i class="fas fa-angle-left right"></i>
-                                    <span class="badge badge-info right">6</span>
                                 </p>
-                            </a> 
+                            </a>
                         </li>
 
                         <li class="nav-item has-treeview">
@@ -107,7 +105,7 @@
                                     <i class="fas fa-angle-left right"></i>
                                     <span class="badge badge-info right">6</span>
                                 </p>
-                            </a> 
+                            </a>
                         </li>
 
                         <li class="nav-item has-treeview">
@@ -129,7 +127,7 @@
                                     <i class="fas fa-angle-left right"></i>
                                     <span class="badge badge-info right">6</span>
                                 </p>
-                            </a> 
+                            </a>
                         </li>
 
                         <li class="nav-item has-treeview">
@@ -140,9 +138,9 @@
                                     <i class="fas fa-angle-left right"></i>
                                     <span class="badge badge-info right">6</span>
                                 </p>
-                            </a> 
-                        </li> 
-                    </ul> 
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
             </div>
@@ -150,32 +148,42 @@
         </aside>
 
         <!-- Content Wrapper. Contains page content -->
+        <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <div class="container-fluid">
-                    <div class="row mb-12">
-
-
-                    </div>
+                     
                 </div><!-- /.container-fluid -->
             </section>
 
             <!-- Main content -->
             <section class="content">
                 <div class="row">
+                    <div class="col-md-12"> 
+                        <div class="card-body">
+
+                            <div class="form-group">
+                                @RenderBody() 
+                               
+                            </div>
+                             
+                        </div>
+                        <!-- /.card-body -->
+                        <!-- /.card -->
+                    </div>
                     
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
-                        @RenderBody()
-                        <!-- /.card -->
+                    <div class="col-12">
+                      
                     </div>
                 </div>
             </section>
             <!-- /.content -->
         </div>
-        
+        <!-- /.content-wrapper -->
+
     </div>
     <!-- ./wrapper -->
     <!-- jQuery -->
