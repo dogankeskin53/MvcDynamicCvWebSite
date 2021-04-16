@@ -1,0 +1,38 @@
+﻿@using MvcDynamicCvWebSite.Models.Entity
+@model List<Experience>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<h3>Deneyim Listesi</h3>
+<br />
+
+<table class="table-bordered" >
+    <tr>
+        <th>ID</th>
+        <th>Başlık</th>
+        <th>Alt Başlık</th>
+        <th>Tarih</th>
+        <th>Sil</th>
+        <th>Düzenle</th>
+
+    </tr>
+
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td> 
+            <td>@item.Heading</td> 
+            <td>@item.SubHeading</td> 
+            <td>@item.Date</td> 
+            <td><a href="#" class="btn btn-danger"> Sil </a></td> 
+            <td><a href="#" class="btn btn-success"> Düzenle</a></td> 
+        </tr>
+    } 
+    </table>
+
+<a href="#" class="btn btn-primary"> Yeni Deneyim Ekle</a>

@@ -182,3 +182,5 @@ Doganium.Api/Infrastructure/Filters/AuthorizationAttribute.cs
 Doganium.DataAccess/dataaccessappsettings.json
 .vs/Doganium/config/applicationhost.config
 .vs/Doganium/config/applicationhost.config
+MvcDynamicCvWebSite/bin/MvcDynamicCvWebSite.dll.config
+MvcDynamicCvWebSite/bin/MvcDynamicCvWebSite.pdb
