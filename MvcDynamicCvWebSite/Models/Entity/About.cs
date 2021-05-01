@@ -22,5 +22,7 @@ namespace MvcDynamicCvWebSite.Models.Entity
         public string Email { get; set; }
         public string Description { get; set; }
         public string Image { get; set; }
+
+        public string XKolon { get; set; }
     }
 }

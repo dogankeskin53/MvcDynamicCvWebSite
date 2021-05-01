@@ -12,5 +12,9 @@ namespace MvcDynamicCvWebSite.Repository
     /// </summary>
     public class ExperianceRepository:GenericRepository<Experience>
     {
+        public override void TAdd(Experience p)
+        {
+            base.TAdd(p);
+        }
     }
 }

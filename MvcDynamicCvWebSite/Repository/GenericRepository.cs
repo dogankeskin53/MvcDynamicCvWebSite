@@ -16,9 +16,22 @@ namespace MvcDynamicCvWebSite.Repository
             return db.Set<T>().ToList();
         }
 
-        public void TAdd(T p) {
+        public virtual void TAdd(T p) {
             db.Set<T>().Add(p);
-            db.SaveChanges();
+
+
+            //0 hiç eklenmedi
+            //-1 hata oluştu
+            int count = db.SaveChanges();
+
+            if (count == 0)
+            {
+                //new yeni kayıt
+            }
+            else
+            {
+                //update
+            }
         }
 
         public void TDelete(T p)
@@ -48,4 +61,8 @@ namespace MvcDynamicCvWebSite.Repository
             return db.Set<T>().FirstOrDefault(where);
         }
     }
+
+
+
+ 
 }
